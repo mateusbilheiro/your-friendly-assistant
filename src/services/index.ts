@@ -1,0 +1,1 @@
+import{events,slots,workers,applications,allocations,reserves}from"../data/mocks";export const mockService={getEvents:()=>events,getSlots:()=>slots,getWorkers:()=>workers,getApplications:()=>applications,getAllocations:()=>allocations,getReserves:()=>reserves};

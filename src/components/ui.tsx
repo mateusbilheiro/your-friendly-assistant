@@ -1,0 +1,5 @@
+import type{ReactNode}from"react";export const Badge=({children,tone="neutral"}:{children:ReactNode;tone?:string})=><span className={"badge "+tone}>{children}</span>;
+export const Card=({children,className=""}:{children:ReactNode;className?:string})=><section className={"card "+className}>{children}</section>;
+export const Button=({children,onClick,variant="primary",disabled=false,type="button"}:{children:ReactNode;onClick?:()=>void;variant?:string;disabled?:boolean;type?:"button"|"submit"})=><button type={type} disabled={disabled} onClick={onClick} className={"btn "+variant}>{children}</button>;
+export const Empty=({title="Nada por aqui",text="Não há registros para exibir."}:{title?:string;text?:string})=><div className="empty"><strong>{title}</strong><span>{text}</span></div>;
+export const Stat=({label,value,detail,icon}:{label:string;value:string|number;detail:string;icon?:ReactNode})=><Card className="stat"><div className="stat-icon">{icon}</div><div><span>{label}</span><b>{value}</b><small>{detail}</small></div></Card>;
